@@ -5,32 +5,42 @@
         <title>Bygninger</title>
 
     </head> 
+    <body>
+    </body>
     <style>
+        body {
+            background-color: white
+            ;
+        }
         header {
-            background-color: rgb(37, 38, 71);
+            background-color: rgb(58, 93, 100);
+            border: 0.5rem solid rgb(73, 73, 73);
         }
         header h1 {
-            
             color: white;
             text-align: left;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            padding-left: 1rem;
-            
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1rem; 
         }
         main {
             background-color: lightcyan;
+            padding: 1rem;
+            border: 0.5rem solid rgb(73, 73, 73);
         }
         table {
             border: 1px solid black;
             width: 100%;
         }
         thead {
-            background-color: darkgray;
+            background-color: rgb(29, 53, 79);
             color: white;
         }
+        tbody {
+            background-color: white;
+        }
         th {
-            text-align: left;
+            text-align: center;
             padding: 0.5rem;
         }
         td {
@@ -39,6 +49,15 @@
         article {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            border: 0.5rem solid rgb(73, 73, 73);
+            background-color: rgb(73, 73, 73);
+        }
+        img {
+            width: 100%; 
+            
+        }
+        .shanghai {
+            background-color: lightblue;
         }
     </style>
 
@@ -64,7 +83,7 @@
                     <td>UAE</td>
                     <td>2009</td>
                 </tr>
-                <tr>
+                <tr class="shanghai">
                     <td>Shanghai Tower</td>
                     <td>632 m</td>
                     <td>Shanghai</td>
@@ -82,8 +101,14 @@
         </table>
     </main>
     <article>
-        <span>hei</span>
-        <span>hei</span>
-        <span>hei</span>
+        <span>
+            <img src="burj_stor.jpg" alt="Burj Hkalifa">
+        </span>
+        <span>
+            <img src="Shanghai_stor.jpg" alt="">
+        </span>
+        <span>
+            <img src="Makkah_stor.jpg" alt="">
+        </span>
     </article>
 </html>
